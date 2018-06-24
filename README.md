@@ -6,7 +6,7 @@ This is an independent, easy to read Startup Code written in "C" for STM32H743xx
 
 If you don't know about the Startup Code, you can read the:
 
-###Theory on Startup Code
+### Theory on Startup Code
 
 Startup code is a small block of assembly language code that prepares the way for the execution of software written in a high-level language. Each high-level language has its own set of expectations about the runtime environment. For example, C both utilize an implicit stack. Space for the stack has to be allocated and initialized before software written in either language can be properly executed. The location and contents of this file are usually described in the documentation supplied with the compiler. 
 
