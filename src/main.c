@@ -3,7 +3,7 @@
  Version     : 1.0.0
  Description : A demonstration of the independent startup code for STM32H7
  Note        : Tested on Nucleo-H743ZI development board
- --------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------
 
  The MIT License (MIT)
  Copyright (c) 2018 Ahmed Elzoughby
