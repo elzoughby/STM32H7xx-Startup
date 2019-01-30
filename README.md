@@ -1,4 +1,4 @@
-## STM32H7xx MCUs Startup Code
+# STM32H7xx MCUs Startup Code
 
 Most IDEs provide us an Assembly code startup file for all STM32 microcontrollers. And this startup file depends on the ARM CMSIS library, so you cannot develop your own standalone application that can access the internal registers directly using their addresses and does not depend on any library.
 
@@ -6,7 +6,9 @@ This is an independent, easy to read Startup Code written in "C" for STM32H743xx
 
 If you don't know about the Startup Code, you can read the:
 
-### Theory on Startup Code
+
+
+## Theory on Startup Code
 
 Startup code is a small block of assembly language code that prepares the way for the execution of software written in a high-level language. Each high-level language has its own set of expectations about the runtime environment. For example, C both utilize an implicit stack. Space for the stack has to be allocated and initialized before software written in either language can be properly executed. The location and contents of this file are usually described in the documentation supplied with the compiler. 
 
@@ -35,3 +37,8 @@ The instruction from the main code will be executed only in the event that the h
 
 Because the startup code is not inserted automatically, the programmer must usually assemble it himself and include the resulting object file among the list of input files to the linker. Every microcontroller has its own startup code, so before creating a project make sure you have the necessary startup code for the specific microcontroller. [[more](http://eagerlearning.org/microcontrollers/theory/startup-code/)]
 
+
+
+## License
+
+Video Download Manager is distributed under the terms of the MIT license. See [LICENSE](https://github.com/elzoughby/vdm/blob/master/LICENSE) for details. Opening a pull requests is assumed to signal agreement with these licensing terms.
