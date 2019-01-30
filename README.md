@@ -41,4 +41,4 @@ Because the startup code is not inserted automatically, the programmer must usua
 
 ## License
 
-Video Download Manager is distributed under the terms of the MIT license. See [LICENSE](https://github.com/elzoughby/vdm/blob/master/LICENSE) for details. Opening a pull requests is assumed to signal agreement with these licensing terms.
+Video Download Manager is distributed under the terms of the MIT license. See [LICENSE](LICENSE) for details. Opening a pull requests is assumed to signal agreement with these licensing terms.
