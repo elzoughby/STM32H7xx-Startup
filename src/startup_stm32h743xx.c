@@ -103,9 +103,9 @@ typedef struct {
 
 
 /*==================== Private macros =====================*/
-#define HWREG(x) (*((volatile uint32_t *)(x)))
-#define RCC_BASE	0x58024400
-#define RCC			((rccStruct*) RCC_BASE)
+#define HWREG(x)    (*((volatile uint32_t *)(x)))
+#define RCC_BASE    0x58024400
+#define RCC         ((rccStruct*) RCC_BASE)
 
 
 /*================== function prototypes ==================*/
@@ -466,7 +466,10 @@ void Default_Handler() {
 void Reset_Handler() {
 
 	/* set stack pointer */
-    __asm("		ldr		sp, =_estack");
+    __asm("    ldr    sp, =_estack");
+
+	/* Call the clock system initialization function */
+    SystemInit();
 
     /* Copy the data segment initializers from flash to SRAM */
     uint32_t* pui32Src, *pui32Dest;
@@ -485,8 +488,6 @@ void Reset_Handler() {
           "        strlt   r2, [r0], #4\n"
           "        blt     zero_loop");
 
-    /* Call the clock system initialization function */
-    SystemInit();
     /* Call static constructors */
     __libc_init_array();
 
