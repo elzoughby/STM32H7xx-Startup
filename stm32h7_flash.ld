@@ -8,7 +8,7 @@ Abstract: Linker script for STM32H743ZI device
  -------------------------------------------------------------------------------
 
  The MIT License (MIT)
- Copyright (c) 2018 STMicroelectronics
+ Copyright (c) 2019 STMicroelectronics
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
